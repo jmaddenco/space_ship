@@ -1,0 +1,6 @@
+Classes we will need
+	space ship
+	stars
+	background
+	score
+	

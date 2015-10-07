@@ -3,12 +3,12 @@ require "gosu"
 class Player
 
 	TURN_INCREMET = 4.5
-	ACCELERATION = 0.5
+	ACCELERATION = 25.1
 
 	def initialize
 		@x = @y = @vel_x = @vel_y = @angle = 0.0
 		@score = 0
-		@image = Gosu::Image.new("media/starighter.bmp")
+		@image = Gosu::Image.new("media/starfighter.bmp")
 	end
 
 	def warp x, y
@@ -29,7 +29,7 @@ class Player
 	end
 
 	def move
-		@X += @vel_x
+		@x += @vel_x
 		@y += @vel_y
 
 		@x %= 640
